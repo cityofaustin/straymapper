@@ -75,7 +75,7 @@ def index(request, template_name='animals/index.html'):
         address = form.cleaned_data['address']
         if address:
             try:
-                (place, (lat, lng)) = g.geocode(address)
+                place, (lat, lng) = g.geocode(address)
             except:
                 location_found = False
             else:
