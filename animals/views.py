@@ -23,10 +23,10 @@ def index(request, template_name='animals/index.html'):
     context = {}
     alist = Animal.objects.filter(
         Q(outcome_type=u'') | Q(outcome_type=u'ADOPTION'))
-    startdate = datetime.today() - timedelta(days=14)
+    startdate = datetime.today() - timedelta(days=64)
     enddate = datetime.today()
     sort_order = '-intake_date'
-    has_image = True
+    has_image = False 
     place, lat, lng = '', None, None
     location_found = False
 
