@@ -16,7 +16,7 @@ def populate(row):
         location = row[1]
         location_found = True
         try:
-            address, (latitude, logitude) = g.geocode(location)
+            address, (latitude, longitude) = g.geocode(location)
         except:
             location_found = False
             print 'location not found'
