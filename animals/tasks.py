@@ -16,7 +16,7 @@ def populate(row):
         location = row[1]
         location_found = True
         try:
-            address, (place, point) = g.geocode(location)
+            address, (latitude, logitude) = g.geocode(location)
         except:
             location_found = False
             print 'location not found'
@@ -43,7 +43,7 @@ def populate(row):
                 a.outcome_date = date(year=odt.year, month=odt.month,
                                       day=odt.day)
             a.transferred_to = row[12]
-            a.geometry = "POINT (%s %s)" % (point[1], point[0])
+            a.geometry = "POINT (%s %s)" % (longitude, latitude)
             a.photo = ''
             a.save()
             print a
