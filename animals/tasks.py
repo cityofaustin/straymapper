@@ -1,12 +1,11 @@
 from datetime import datetime, date
 
 from celery import task
-from geopy import geocoders
+from geopy.geocoders import GoogleV3
 
 from animals.models import Animal
 
-g = geocoders.Google('AIzaSyAZoNPSlRTETltbmJvgYYqol0SLAVBgKs')
-
+g =  GoogleV3()
 
 @task()
 def populate(row):
@@ -17,7 +16,7 @@ def populate(row):
         location = row[1]
         location_found = True
         try:
-            (place, point) = g.geocode(location)
+            address, (place, point) = g.geocode(location)
         except:
             location_found = False
             print 'location not found'

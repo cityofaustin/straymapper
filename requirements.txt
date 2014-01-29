@@ -11,7 +11,7 @@ django-celery==3.0.10
 django-extensions==0.9
 django-imagekit==2.0.2
 django-storages==1.1.5
-geopy==0.94.2
+geopy==0.97
 gunicorn==0.14.6
 kombu==2.4.7
 linaro-django-pagination==2.0.2
