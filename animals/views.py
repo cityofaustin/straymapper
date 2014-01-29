@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 from geopy import geocoders
 
-g = geocoders.Google('AIzaSyAZoNPSlRTETltbmJvgYYqol0SLAVBgKs')
+g = geocoders.GoogleV3()
 
 #from devserver.modules.profile import devserver_profile
 from straymapper.helpers import unicode_csv_reader
