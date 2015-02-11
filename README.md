@@ -1,6 +1,9 @@
+# Retired 02.2015
+
 # Stray Pet Mapper   [![Build Status](https://secure.travis-ci.org/codeforamerica/straymapper.png)](http://travis-ci.org/codeforamerica/straymapper)
 Reunite more stray animals with their human companions
 
+ 
 
 
 ## <a name="screenshot"></a>Screenshot
@@ -8,9 +11,7 @@ Reunite more stray animals with their human companions
 
 ## <a name="demo"></a>Demo
 You can see a running version of the application at
-[http://stray.citypetz.com/][demo].
-
-[demo]: http://straymapper.com/
+~~http://stray.citypetz.com/~~
 
 ## <a name="environment"></a>Development Environment
 
